@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+    <% pessoas.forEach((pessoa) => { %> <%= pessoa.nome %> <% }) %>
+    <% pessoas.forEach((pessoa) => { %> <%= pessoa.sobrenome %> <% }) %>
+    <% pessoas.forEach((pessoa) => { %> <%= pessoa.idade %> <% }) %>
+    <% pessoas.forEach((pessoa) => { %> <%= pessoa.altura %><% }) %>
+    <h2 class="button" onclick="location = '/pessoas/criar'">Cancelar</h2>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/estilo.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2>Faça seu cadastro:</h2>
+
+    <section class="card">
+        <form method="post" action="/pessoas/criar">
+            <label id="nome" for="nome">Nome:</label> <input id="nome" name="nome" type="text">
+            <label id="sobrenome" for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" name="sobrenome" type="text">
+            <label id="altura" for="altura">Altura:</label>
+            <input id="altura" name="altura" type="text">
+            <label id="idade" for="idade">Idade:</label>
+            <input id="idade" name="idade" type="text">
+            <input id="button" type="submit" value="Cadastrar"/>
+        </form>
+    </section>
+</body>
+</html>

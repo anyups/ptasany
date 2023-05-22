@@ -1,7 +1,13 @@
-.card{
-    border: 1px solid black;
+.card{;
     display: block;
-    width: 300px;
+    width: 400px;
     height: 300px;
     padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(239, 239, 239);
+}
+
+.card .form{
+    position: absolute;
+    display: block;
 }

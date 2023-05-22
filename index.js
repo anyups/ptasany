@@ -33,6 +33,19 @@ app.post('/pessoas/criar', async function(req, res){
   }
 })
 
+app.get('/pessoas/delete/:id', async function(req, res){
+  try {
+    //Obtive o id da pessoa que seria excluida
+    const id = req.params.id; 
+    await pessoa.destroy({ where: { id: id } });
+    res.redirect('/pessoas'); 
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Erro ao deletar usuário.' });
+  }
+});
+
+
 app.listen(3000, function() {
   console.log('Executando na porta 3000')
 });

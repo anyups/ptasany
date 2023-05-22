@@ -7,10 +7,21 @@
     <title>HOME</title>
 </head>
 <body>
-    <% pessoas.forEach((pessoa) => { %> <%= pessoa.nome %> <% }) %>
-    <% pessoas.forEach((pessoa) => { %> <%= pessoa.sobrenome %> <% }) %>
-    <% pessoas.forEach((pessoa) => { %> <%= pessoa.idade %> <% }) %>
-    <% pessoas.forEach((pessoa) => { %> <%= pessoa.altura %><% }) %>
-    <h2 class="button" onclick="location = '/pessoas/criar'">Cancelar</h2>
+    <% pessoas.forEach((pessoa) => { %>
+        <div>
+          <div>
+            <div>
+              <h3>ID: <%= pessoa.id %></h3>
+              <p>Nome: <%= pessoa.nome %></p>
+              <p>Sobrenome: <%= pessoa.sobrenome %></p>
+              <p>Idade: <%= pessoa.idade %></p>
+              <p>Altura: <%= pessoa.altura %></p>
+            </div>
+            <div>
+              <button><a href="/pessoas/delete/<%= pessoa.id %>">Excluir</a></button>
+            </div>
+          </div>
+        </div>
+    <% }) %>
 </body>
 </html>

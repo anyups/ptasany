@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/estilo.css"/>
-    <title>Cadastro</title>
+    <title>CADASTRAR</title>
 </head>
 <body>
-    <h2>Faça seu cadastro:</h2>
 
-    <section class="card">
-        <form class="form" method="post" action="/pessoas/criar">
-            <label id="nome" for="nome">Nome:</label> 
-            <input id="nome" name="nome" type="text"><br/>
-            <label id="sobrenome" for="sobrenome">Sobrenome:</label>
-            <input id="sobrenome" name="sobrenome" type="text"><br/>
-            <label id="altura" for="altura">Altura:</label>
-            <input id="altura" name="altura" type="text"><br/>
-            <label id="idade" for="idade">Idade:</label>
-            <input id="idade" name="idade" type="text"><br/>
-            <input id="button" type="submit" value="Cadastrar"/>
-        </form>
-    </section>
+   <div class="container">
+        <div class="titulo">Cadastre-se:</div>
+
+        <div class="formulario">
+          <form action="/pessoas/criar">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Seu primeiro nome">
+    
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" placeholder="Seu último sobrenome">
+
+            <label for="idade">Idade:</label>
+            <input type="text" placeholder="Sua idade">
+
+            <label for="altura">Altura:</label>
+            <input type="text" placeholder="Sua altura">
+
+            <input class="botao" type="submit" value="Cadastrar"/>
+          </form>
+        </div>
+    </div>
+
 </body>
 </html>
